@@ -1,0 +1,9 @@
+[INFO  - 2016-12-27T15:59:42.390Z] GhostDriver - Main - running on port 24287
+[INFO  - 2016-12-27T15:59:42.725Z] Session [7adc8800-cc4d-11e6-970d-5d05c327c473] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-12-27T15:59:42.725Z] Session [7adc8800-cc4d-11e6-970d-5d05c327c473] - page.customHeaders:  - {}
+[INFO  - 2016-12-27T15:59:42.725Z] Session [7adc8800-cc4d-11e6-970d-5d05c327c473] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-12-27T15:59:42.725Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 7adc8800-cc4d-11e6-970d-5d05c327c473
+[ERROR - 2016-12-27T15:59:59.555Z] Session [7adc8800-cc4d-11e6-970d-5d05c327c473] - page.onError - msg: ReferenceError: Can't find variable: SAFE_CLOSING
+[ERROR - 2016-12-27T15:59:59.555Z] Session [7adc8800-cc4d-11e6-970d-5d05c327c473] - page.onError - stack:
+  exports (undefined:17)
+[INFO  - 2016-12-27T15:59:59.634Z] ShutdownReqHand - _handle - About to shutdown

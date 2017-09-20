@@ -1,0 +1,4 @@
+{
+	"reporter": ["lcov", "text-summary"],
+	"exclude": [".tmp","test", "test/containers", "test.webpack.config.js"]
+}

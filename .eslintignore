@@ -1,0 +1,7 @@
+node_modules
+docs
+coverage
+_book
+.tmp
+.nyc_output
+.git

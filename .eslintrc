@@ -1,0 +1,58 @@
+{
+	"extends": "airbnb",
+  "globals": {
+    "describe": true,
+    "require": true,
+    "window": true,
+    "document": true,
+    "it": true,
+    "browser": true,
+    "beforeEach": true
+  },
+  "plugins": ["import"],
+  "settings": {
+    "import/resolver": "webpack"
+  },
+	"rules": {
+		"import/no-extraneous-dependencies": [
+			"error",
+			{ 
+				"devDependencies": true,
+				"optionalDependencies": false,
+				"peerDependencies": false
+			}
+		],
+		"linebreak-style": ["error", "unix"],
+		"no-multi-spaces": [
+			"error",
+			{
+				"exceptions": {
+					"ImportDeclaration": true,
+					"VariableDeclarator": true
+				}
+			}
+		],
+    "react/jsx-curly-spacing": [2, "always"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "max-len": ["error", 200],
+    "comma-dangle": ["error", "never"],
+    "import/extensions": ["error", { "js": "never"}],
+    "space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "always",
+      "asyncArrow": "always"
+    }],
+    "arrow-parens": ["error", "as-needed"],
+    "dot-notation": ["error", { "allowPattern": "^\\w+-\\w+$" }],
+    "react/no-array-index-key": "off",
+    "react/jsx-closing-bracket-location": "off",
+    "jsx-a11y/tabindex-no-positive": "off",
+    "key-spacing": "off",
+    "no-shadow": "off",
+    "no-plusplus": "off",
+    "no-lonely-if": "off",
+    "import/no-webpack-loader-syntax": "off",
+    "no-unused-expressions": "off",
+    "react/jsx-no-bind": "off"
+	}
+}

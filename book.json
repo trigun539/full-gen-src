@@ -1,0 +1,7 @@
+{
+	"plugins": ["-sharing"],
+	"fontSettings": {
+		"theme": "night",
+		"family": "sans"
+	}
+}

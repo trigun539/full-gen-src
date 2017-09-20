@@ -1,0 +1,46 @@
+$border: 1px solid #CCC;
+$link: rgb(85, 142, 213);
+
+:local {
+
+  .wrapper {
+    position: absolute;
+    list-style: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .item {
+    display: flex;
+    justify-content: row;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border-bottom: $border;
+  }
+
+  .item-label {
+    flex: 1 1 50%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: .9em;
+  }
+
+  .item-value {
+    padding: 10px;
+    font-family: RobotoLight;
+    font-size: .9em;
+    
+    a {
+      color: $link;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+}

@@ -1,0 +1,14 @@
+# Files not to be tracked.
+
+storybook-static
+dist
+node_modules
+coverage
+*.tap
+test-ui/screenshots
+test-ui/error-shots
+test-ui/errorShots
+_book
+.nyc_output
+.tmp
+WDIO.xunit*
