@@ -20,7 +20,6 @@ import NotFound                                   from 'containers/not-found/not
 import reducers                                   from './reducers';
 import RootSaga                                   from './sagas';
 
-
 // Polyfilling promises
 polyfill();
 
@@ -34,15 +33,16 @@ const middlewares = [
 
 const enhancers = [
   applyMiddleware(...middlewares)
-  // Devtools could go here
 ];
 
 const initialState = Immutable.Map();
 
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
 const store = createStore(
   reducers,
   initialState,
-  compose(...enhancers)
+  composeEnhancers(...enhancers)
 );
 
 const history = syncHistoryWithStore(hashHistory, store, {

@@ -1,57 +1,65 @@
-:global @font-face {
-	font-family: RobotoRegular;
-	src: url(fonts/Roboto-Regular.ttf);
+@import "./../../../node_modules/bulma/css/bulma.css";
+
+:global {
+
+  @font-face {
+    font-family: RobotoRegular;
+    src: url(fonts/Roboto-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: RobotoItalic;
+    src: url(fonts/Roboto-Italic.ttf);
+  }
+
+  @font-face {
+    font-family: RobotoLight;
+    src: url(fonts/Roboto-Light.ttf);
+  }
+
+  @font-face {
+    font-family: RobotoBold;
+    src: url(fonts/Roboto-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: RobotoThin;
+    src: url(fonts/Roboto-Thin.ttf);
+  }
+
+  html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: RobotoRegular;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
 }
 
-:global @font-face {
-	font-family: RobotoItalic;
-	src: url(fonts/Roboto-Italic.ttf);
-}
-
-:global @font-face {
-	font-family: RobotoLight;
-	src: url(fonts/Roboto-Light.ttf);
-}
-
-:global @font-face {
-	font-family: RobotoBold;
-	src: url(fonts/Roboto-Bold.ttf);
-}
-
-:global @font-face {
-	font-family: RobotoThin;
-	src: url(fonts/Roboto-Thin.ttf);
-}
-
-:global html {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	font-family: RobotoRegular;
-}
-
-:global body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-:global #container {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
-
-:local .app {
-	box-sizing: border-box;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	overflow: hidden;
+:local {
+  .app {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
 }
