@@ -5,6 +5,7 @@ import styles               from './styles.css';
 import {
   requestSubscriptions
 }                           from './actions';
+import { MdCancel, MdChat } from 'react-icons/lib/md';
 
 export class Home extends Component {
 
@@ -23,24 +24,18 @@ export class Home extends Component {
       push
     } = this.props;
 
-    // Formatting subscriptions
-    const formattedSubscriptions = [];
-
-    subscriptions.forEach(x => {
-      formattedSubscriptions.push({
-        text: x.businessName || x.physicalName,
-        link: '',
-        tag: x.type
-      });
-    });
-
     return (
       <div className={ styles.home } >
         
-        <h1 className="title" >Homepage Edited</h1>
+        <h1 className="title" >Welcome to Full React Generator</h1>
 
         <button className="button" onClick={ () => { push('/about'); } }>Go to About US</button>
         <button className="button" onClick={ () => { push('/somepage'); } }>Go to not found page</button>
+
+        <h2 className="title is-2">Available Icons</h2>
+
+        <button className="button"><MdCancel /></button>
+        <button className="button"><MdChat /></button>
 
       </div>
     );
